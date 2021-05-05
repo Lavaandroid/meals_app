@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       home: CategoriesScreen(),   //wskazuje ktory ekran jest glowny
     routes: {
-        //'/categories':(ctx)=> CategoryMealsScreen()
+        '/category-meals':(ctx)=> CategoryMealsScreen()
     },
     );
   }

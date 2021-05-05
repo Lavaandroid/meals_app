@@ -11,12 +11,9 @@ class CategoryItem extends StatelessWidget {
 
   void selectCategory(BuildContext ctx) {   //narzedzie zeby zmienic ekran
 
-    Navigator.of(ctx).push(MaterialPageRoute(builder: (_){      //push dodaje strone, a pop usuwa
+    Navigator.of(ctx).pushNamed(      //push dodaje strone, a pop usuwa
 
-      return CategoryMealsScreen(id, title);
-
-    },
-    ),
+      '/category-meals', arguments: {'id': id, 'title': title}
     );
   }
 
